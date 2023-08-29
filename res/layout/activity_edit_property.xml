@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editProperty">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/topBar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/green">
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:src="@drawable/baseline_arrow_back_24"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Back Button"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RealEstate"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Property"
+                android:textStyle="bold"
+                android:textSize="36sp"
+                android:textColor="@color/green"
+                android:gravity="center"
+                android:layout_margin="10dp"/>
+
+
+            <EditText
+                android:id="@+id/editheadline"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:hint="Land/Villa/Apartment etc"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:id="@+id/editPrice"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:hint="Rs."
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editType"
+                android:layout_width="match_parent"
+                android:layout_height='60dp'
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:hint="Sale/Rent/Lease "
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:id="@+id/editDescription"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:hint="Description about property"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:id="@+id/editBedrooms"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:hint="number of bedrooms(NA for plot)"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editLocation"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:hint="Enter the full address"
+                android:textColor="@color/black" />
+
+
+            <EditText
+                android:id="@+id/editPin"
+                android:layout_width="match_parent"
+                android:layout_height='60dp'
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:hint="Area PinCode"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editPof"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:hint="Special features"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seller Details:"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="32sp"/>
+
+            <EditText
+                android:id="@+id/editSname"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:hint="seller Name "
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/editSnumber"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:hint="10 Digit mobile number"
+                android:textColor="@color/black" />
+
+
+
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/saveButton"
+                android:text="Edit"
+                android:backgroundTint="#FF5722"
+                android:layout_margin="10dp"/>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
